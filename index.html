@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#100e11" data-theme-color>
+  <title>Dampak — Desarrollo digital en verde</title>
+  <meta name="description" content="Dampak diseña y construye sitios, portales y tiendas online. Propuesta 06 en verde brillante, con tema oscuro y claro.">
+  <link rel="icon" type="image/png" href="assets/brand/favicon-512.png">
+  <link rel="preload" href="assets/fonts/BricolageGrotesque.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/SchibstedGrotesk.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script>
+    /* Tema antes de pintar: evita el parpadeo al recargar. */
+    (function () {
+      try {
+        var saved = localStorage.getItem('dampak-tema-propuesta-06');
+        if (saved === 'light' || saved === 'dark') document.documentElement.dataset.theme = saved;
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="scroll-progress" aria-hidden="true" data-progress></div>
+
+  <header class="site-header" data-header>
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="Dampak, volver al inicio">
+        <img class="brand-logo-on-dark" src="assets/brand/logo-light.png" width="1881" height="420" alt="Dampak">
+        <img class="brand-logo-on-light" src="assets/brand/logo-dark.png" width="1881" height="420" alt="">
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#casos">Casos</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#nosotros">Nosotros</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4.2"></circle>
+            <path d="M12 2.4v2.6M12 19v2.6M2.4 12H5M19 12h2.6M5.2 5.2l1.9 1.9M16.9 16.9l1.9 1.9M18.8 5.2l-1.9 1.9M7.1 16.9l-1.9 1.9"></path>
+          </svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.2 14.6A8.4 8.4 0 0 1 9.4 3.8a8.4 8.4 0 1 0 10.8 10.8Z"></path>
+          </svg>
+          <span class="sr-only" data-theme-label>Cambiar a tema claro</span>
+        </button>
+
+        <a class="header-cta" href="#contacto">
+          <span class="cta-square" aria-hidden="true"></span>
+          Hablemos
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-movil" data-menu-toggle>
+        <span>Menú</span>
+        <span class="menu-toggle-icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="menu-movil" data-menu hidden>
+      <nav aria-label="Navegación móvil">
+        <a href="#servicios">Servicios</a>
+        <a href="#casos">Casos</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="mobile-menu-foot">
+        <a class="btn btn-accent" href="#contacto">Hablemos de tu proyecto</a>
+        <a class="mobile-mail" href="mailto:contacto@dampak.com.co">contacto@dampak.com.co</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ================================================================
+         Apertura
+         ================================================================ -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 class="hero-title" id="hero-title">
+            <span class="hero-flag">Desarrollo web</span>
+            <span class="hero-title-rest">a la medida</span>
+          </h1>
+
+            <p class="hero-lede">Somos Dampak, una casa de desarrollo digital en Colombia. Diseñamos y construimos sitios, portales y tiendas online para que tu negocio tenga una buena experiencia también en internet.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-accent" href="#contacto">Cuéntanos tu proyecto <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#casos">Ver los casos <span aria-hidden="true">↓</span></a>
+          </div>
+
+          <dl class="hero-meta">
+            <div>
+              <dt>Estudio</dt>
+              <dd>Casa de desarrollo digital</dd>
+            </div>
+            <div>
+              <dt>Portafolio</dt>
+              <dd>Siete proyectos reales, en línea</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-index" aria-label="Vista previa de proyectos">
+          <div class="index-preview">
+            <div class="browser-bar">
+              <span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="browser-url" data-preview-domain>playgroundweb.com</span>
+              <span class="browser-state">Sitio publicado</span>
+            </div>
+            <div class="preview-screen">
+              <img src="assets/projects/playground-top.jpg" alt="Portada de Playground con una cantante y noticias de cultura y música." width="1440" height="900" data-preview-image fetchpriority="high">
+              <div class="preview-caption">
+                <span data-preview-type>Plataforma cultural</span>
+                <span data-preview-name>Playground</span>
+              </div>
+              <span class="preview-progress" aria-hidden="true"><i data-preview-progress></i></span>
+            </div>
+          </div>
+
+          <div class="index-list" role="group" aria-label="Proyectos destacados: se renuevan solos y también puedes elegir uno" data-preview-list>
+            <button type="button" class="index-row is-active" data-project="playground" data-domain="playgroundweb.com" data-image="assets/projects/playground-top.jpg" data-type="Plataforma cultural" data-name="Playground" data-alt="Portada de Playground con una cantante y noticias de cultura y música." aria-pressed="true">
+              <span class="index-name">Playground</span>
+              <span class="index-type">Cultura</span>
+              <span class="index-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button type="button" class="index-row" data-project="futureproof" data-domain="futureproofhq.com" data-image="assets/projects/futureproof-top.jpg" data-type="Eventos y comunidad" data-name="Futureproof" data-alt="Portada de Futureproof con sus próximos eventos y comunidades." aria-pressed="false">
+              <span class="index-name">Futureproof</span>
+              <span class="index-type">Eventos</span>
+              <span class="index-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button type="button" class="index-row" data-project="nuevosiglo" data-domain="elnuevosiglo.com.co" data-image="assets/projects/nuevosiglo-top.jpg" data-type="Portal de noticias" data-name="El Nuevo Siglo" data-alt="Portada de El Nuevo Siglo con noticias de actualidad y columnas editoriales" aria-pressed="false">
+              <span class="index-name">El Nuevo Siglo</span>
+              <span class="index-type">Noticias</span>
+              <span class="index-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button type="button" class="index-row" data-project="burgerfest" data-domain="burgerfestoficial.com" data-image="assets/projects/burgerfest-top.jpg" data-type="Votación pública" data-name="Burger Fest" data-alt="Portada de Burger Fest Facatativá 2026, plataforma de votación de las hamburguesas participantes" aria-pressed="false">
+              <span class="index-name">Burger Fest</span>
+              <span class="index-type">Votación</span>
+              <span class="index-arrow" aria-hidden="true">↗</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         Servicios
+         ================================================================ -->
+    <section class="services" id="servicios" aria-labelledby="services-title">
+      <div class="section-bar">
+        <h2 id="services-title" tabindex="-1">Servicios</h2>
+        <p>Empezamos por entender qué necesita el negocio y de ahí sacamos el producto: lo que se ve, lo que se usa y lo que se puede medir.</p>
+      </div>
+
+      <div class="service-list" data-services>
+        <details class="service" open>
+          <summary>
+            <span class="service-name">Landing pages</span>
+            <span class="service-what">Una sola página para lanzar, presentar o capturar contactos.</span>
+            <span class="service-scope">Copy · Diseño · Desarrollo</span>
+            <span class="service-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="service-body">
+            <p>¿Vas a lanzar algo, presentar un servicio o recibir inscripciones? Planeamos una página enfocada en ese objetivo, fácil de entender y cómoda de usar desde el celular.</p>
+            <div class="service-deliverables">
+              <h3>Entregables</h3>
+              <ul>
+                <li>Estructura y textos de la página</li>
+                <li>Diseño responsive, listo para celular</li>
+                <li>Formulario, analítica y dominio</li>
+                <li>Publicación y medición</li>
+              </ul>
+            </div>
+            <a class="text-link" href="#contacto">Hablemos de este servicio <span aria-hidden="true">↗</span></a>
+          </div>
+        </details>
+
+        <details class="service">
+          <summary>
+            <span class="service-name">Sitios corporativos</span>
+            <span class="service-what">La versión completa de la empresa: qué hace, cómo lo hace y cómo lo contactan.</span>
+            <span class="service-scope">Arquitectura · Contenido · Desarrollo</span>
+            <span class="service-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="service-body">
+            <p>Organizamos lo que hace tu empresa, lo que ofrece y la forma de contactarla. Así, quien llega por primera vez puede encontrar lo que necesita sin tener que adivinar.</p>
+            <div class="service-deliverables">
+              <h3>Entregables</h3>
+              <ul>
+                <li>Mapa del site y jerarquía de contenidos</li>
+                <li>Diseño de marca y piezas clave</li>
+                <li>Desarrollo y carga de contenido</li>
+                <li>Correos, formularios y analítica</li>
+              </ul>
+            </div>
+            <a class="text-link" href="#contacto">Hablemos de este servicio <span aria-hidden="true">↗</span></a>
+          </div>
+        </details>
+
+        <details class="service">
+          <summary>
+            <span class="service-name">Portales de contenido</span>
+            <span class="service-what">Para publicar todas las semanas sin esperar a un desarrollador.</span>
+            <span class="service-scope">Modelo editorial · Plantillas · CMS</span>
+            <span class="service-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="service-body">
+            <p>Si tu equipo publica noticias, artículos o novedades con frecuencia, preparamos las secciones y plantillas para que pueda actualizar el contenido desde un CMS.</p>
+            <div class="service-deliverables">
+              <h3>Entregables</h3>
+              <ul>
+                <li>Modelo editorial y jerarquías</li>
+                <li>Plantillas para cada sección</li>
+                <li>Editor y permisos de publicación</li>
+                <li>SEO, noticias y analítica</li>
+              </ul>
+            </div>
+            <a class="text-link" href="#contacto">Hablemos de este servicio <span aria-hidden="true">↗</span></a>
+          </div>
+        </details>
+
+        <details class="service">
+          <summary>
+            <span class="service-name">E-commerce</span>
+            <span class="service-what">Catálogo, carrito, pagos y envíos conectados de punta a punta.</span>
+            <span class="service-scope">Catálogo · Checkout · Pagos</span>
+            <span class="service-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="service-body">
+            <p>Armamos una tienda con catálogo, carrito y un proceso de compra claro. Revisamos junto contigo los pagos y envíos que necesita el negocio.</p>
+            <div class="service-deliverables">
+              <h3>Entregables</h3>
+              <ul>
+                <li>Catálogo, fichas y filtros</li>
+                <li>Carrito y checkout probado</li>
+                <li>Pasarela de pagos y envíos</li>
+                <li>Reportes de ventas y stock</li>
+              </ul>
+            </div>
+            <a class="text-link" href="#contacto">Hablemos de este servicio <span aria-hidden="true">↗</span></a>
+          </div>
+        </details>
+
+        <details class="service">
+          <summary>
+            <span class="service-name">Desarrollo a medida</span>
+            <span class="service-what">Cuando el proceso ya no cabe en una plantilla.</span>
+            <span class="service-scope">Integraciones · Herramientas internas</span>
+            <span class="service-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="service-body">
+            <p>Cuando una plantilla se queda corta, podemos revisar el proceso y proponer una herramienta o integración que se ajuste a la forma de trabajar de tu equipo.</p>
+            <div class="service-deliverables">
+              <h3>Entregables</h3>
+              <ul>
+                <li>Descubrimiento y alcance</li>
+                <li>Prototipo funcional</li>
+                <li>Arquitectura, APIs e integraciones</li>
+                <li>Desarrollo, soporte y mantenimiento</li>
+              </ul>
+            </div>
+            <a class="text-link" href="#contacto">Hablemos de este servicio <span aria-hidden="true">↗</span></a>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         Casos de éxito
+         ================================================================ -->
+    <section class="work" id="casos" aria-labelledby="work-title">
+      <div class="section-bar">
+        <h2 id="work-title" tabindex="-1">Casos de éxito</h2>
+        <p>Proyectos reales, publicados y en línea. Cada uno arrancó con un problema distinto y terminó con una solución distinta.</p>
+      </div>
+
+      <article class="case reveal">
+        <a class="case-media" href="https://www.playgroundweb.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Playground, se abre en una pestaña nueva">
+          <span class="case-bar">
+            <span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="browser-url">playgroundweb.com</span>
+            <span class="browser-state">Sitio publicado</span>
+          </span>
+          <img src="assets/projects/playground-top.jpg" alt="Portada de Playground con una cantante y noticias de cultura y música." width="1440" height="900" loading="lazy">
+        </a>
+        <div class="case-info">
+          <div class="case-line"><span>01</span><span>Plataforma cultural</span></div>
+          <h3>Playground</h3>
+          <p>Agenda, artistas y noticias montados como una revista: mucho contenido y una sola idea por pantalla.</p>
+          <dl class="case-spec">
+            <div><dt>Foco</dt><dd>Identidad y contenido</dd></div>
+            <div><dt>Experiencia</dt><dd>Descubrimiento</dd></div>
+          </dl>
+          <a class="text-link" href="https://www.playgroundweb.com/" target="_blank" rel="noopener noreferrer">Sitio en línea <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="case case-reverse reveal">
+        <a class="case-media" href="https://futureproofhq.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Futureproof, se abre en una pestaña nueva">
+          <span class="case-bar">
+            <span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="browser-url">futureproofhq.com</span>
+            <span class="browser-state">Sitio publicado</span>
+          </span>
+          <img src="assets/projects/futureproof-top.jpg" alt="Portada de Futureproof con sus próximos eventos y comunidades." width="1440" height="900" loading="lazy">
+        </a>
+        <div class="case-info">
+          <div class="case-line"><span>02</span><span>Eventos y comunidad</span></div>
+          <h3>Futureproof</h3>
+          <p>Una comunidad de asesores financieros con eventos, contenido y una ruta clara para inscribirse. La marca se siente viva desde la primera pantalla.</p>
+          <dl class="case-spec">
+            <div><dt>Foco</dt><dd>Comunidad y eventos</dd></div>
+            <div><dt>Experiencia</dt><dd>Descubrimiento e inscripción</dd></div>
+          </dl>
+          <a class="text-link" href="https://futureproofhq.com/" target="_blank" rel="noopener noreferrer">Sitio en línea <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <a class="case-media" href="https://elnuevosiglo.com.co/" target="_blank" rel="noopener noreferrer" aria-label="Visitar El Nuevo Siglo, se abre en una pestaña nueva">
+          <span class="case-bar">
+            <span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="browser-url">elnuevosiglo.com.co</span>
+            <span class="browser-state">Sitio publicado</span>
+          </span>
+          <img src="assets/projects/nuevosiglo-top.jpg" alt="Portada de El Nuevo Siglo con noticias de actualidad y columnas editoriales." width="1440" height="1000" loading="lazy">
+        </a>
+        <div class="case-info">
+          <div class="case-line"><span>03</span><span>Portal de noticias</span></div>
+          <h3>El Nuevo Siglo</h3>
+          <p>Cabecera con jerarquías claras, secciones que se leen de un vistazo y una portada que no le pide permiso al lector.</p>
+          <dl class="case-spec">
+            <div><dt>Foco</dt><dd>Organización editorial</dd></div>
+            <div><dt>Experiencia</dt><dd>Lectura diaria</dd></div>
+          </dl>
+          <a class="text-link" href="https://elnuevosiglo.com.co/" target="_blank" rel="noopener noreferrer">Sitio en línea <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="case case-reverse reveal">
+        <a class="case-media" href="https://burgerfestoficial.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar Burger Fest Facatativá, se abre en una pestaña nueva">
+          <span class="case-bar">
+            <span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="browser-url">burgerfestoficial.com</span>
+            <span class="browser-state">Sitio publicado</span>
+          </span>
+          <img src="assets/projects/burgerfest-top.jpg" alt="Portada de Burger Fest Facatativá 2026 con la hamburguesa y el llamado a votar." width="1440" height="1000" loading="lazy">
+        </a>
+        <div class="case-info">
+          <div class="case-line"><span>04</span><span>Votación pública</span></div>
+          <h3>Burger Fest Facatativá</h3>
+          <p>Una experiencia para conocer los restaurantes participantes y votar por sus hamburguesas favoritas. El registro ayuda a validar un voto por restaurante.</p>
+          <dl class="case-spec">
+            <div><dt>Foco</dt><dd>Votar desde el celular</dd></div>
+            <div><dt>Experiencia</dt><dd>Registro y conteo</dd></div>
+          </dl>
+          <a class="text-link" href="https://burgerfestoficial.com/" target="_blank" rel="noopener noreferrer">Sitio en línea <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <a class="case-media" href="https://maad101.uniandes.edu.co/" target="_blank" rel="noopener noreferrer" aria-label="Visitar MAAD 101, se abre en una pestaña nueva">
+          <span class="case-bar">
+            <span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="browser-url">maad101.uniandes.edu.co</span>
+            <span class="browser-state">Sitio publicado</span>
+          </span>
+          <img src="assets/projects/maad101-top.jpg" alt="Portada de MAAD 101 con el capítulo 1 y los capítulos disponibles." width="1440" height="1000" loading="lazy">
+        </a>
+        <div class="case-info">
+          <div class="case-line"><span>05</span><span>Curso digital</span></div>
+          <h3>MAAD 101</h3>
+          <p>Un curso por capítulos para la Universidad de los Andes, con recorrido guiado, recursos de apoyo y herramientas de autocuidado dentro de la misma experiencia.</p>
+          <dl class="case-spec">
+            <div><dt>Foco</dt><dd>Recorrido por capítulos</dd></div>
+            <div><dt>Experiencia</dt><dd>Aprendizaje y recursos</dd></div>
+          </dl>
+          <a class="text-link" href="https://maad101.uniandes.edu.co/" target="_blank" rel="noopener noreferrer">Sitio en línea <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="case case-reverse reveal">
+        <a class="case-media" href="https://dona.feyalegria.org/" target="_blank" rel="noopener noreferrer" aria-label="Visitar la página de donaciones de Fe y Alegría, se abre en una pestaña nueva">
+          <span class="case-bar">
+            <span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="browser-url">dona.feyalegria.org</span>
+            <span class="browser-state">Sitio publicado</span>
+          </span>
+          <img src="assets/projects/feyalegria-top.jpg" alt="Página de donaciones de Fe y Alegría con estudiantes y botones para donar." width="1440" height="1000" loading="lazy">
+        </a>
+        <div class="case-info">
+          <div class="case-line"><span>06</span><span>Causa y donación</span></div>
+          <h3>Fe y Alegría</h3>
+          <p>Una página de donaciones que explica la causa, pide lo justo y deja donar sin vueltas ni letra pequeña.</p>
+          <dl class="case-spec">
+            <div><dt>Foco</dt><dd>Claridad de la causa</dd></div>
+            <div><dt>Experiencia</dt><dd>Acción de donar</dd></div>
+          </dl>
+          <a class="text-link" href="https://dona.feyalegria.org/" target="_blank" rel="noopener noreferrer">Sitio en línea <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <a class="case-media" href="https://www.ruan-co.com.co/" target="_blank" rel="noopener noreferrer" aria-label="Visitar RUANCO Abogados, se abre en una pestaña nueva">
+          <span class="case-bar">
+            <span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="browser-url">ruan-co.com.co</span>
+            <span class="browser-state">Sitio publicado</span>
+          </span>
+          <img src="assets/projects/ruanco-top.jpg" alt="Portada de RUANCO Abogados con una imagen de túnel y el nombre de la firma." width="1440" height="1000" loading="lazy">
+        </a>
+        <div class="case-info">
+          <div class="case-line"><span>07</span><span>Sitio corporativo legal</span></div>
+          <h3>RUANCO Abogados</h3>
+          <p>La firma, el equipo y las áreas de práctica, con la formalidad que el sector pide y la claridad que el visitante necesita.</p>
+          <dl class="case-spec">
+            <div><dt>Foco</dt><dd>Confianza y servicios</dd></div>
+            <div><dt>Experiencia</dt><dd>Presentación institucional</dd></div>
+          </dl>
+          <a class="text-link" href="https://www.ruan-co.com.co/" target="_blank" rel="noopener noreferrer">Sitio en línea <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <p class="work-note">Capturas de los sitios publicados, tomadas en octubre de 2026.</p>
+    </section>
+
+    <!-- ================================================================
+         Qué opinan nuestros clientes
+         ================================================================ -->
+    <section class="voices" id="clientes" aria-labelledby="voices-title">
+      <div class="section-bar">
+        <h2 id="voices-title" tabindex="-1">Qué opinan nuestros clientes</h2>
+        <p>Una buena relación de trabajo también se nota en cómo nos entendemos y resolvemos las cosas.</p>
+      </div>
+
+      <p class="content-placeholder" role="note">Ejemplos de texto para esta propuesta · No son testimonios reales. Se reemplazan por citas autorizadas antes de publicar.</p>
+      <div class="voice-slider" data-voices>
+        <div class="voice-window" aria-live="off">
+          <figure class="voice is-active" data-voice data-placeholder="testimonio" aria-hidden="false">
+            <blockquote><p>Entendieron el problema antes de hablar de pantallas. Eso nos ahorró meses de trabajo.</p></blockquote>
+            <figcaption><span class="voice-role">Cargo por confirmar</span><span class="voice-org">Organización por confirmar</span></figcaption>
+          </figure>
+          <figure class="voice" data-voice data-placeholder="testimonio" aria-hidden="true">
+            <blockquote><p>El sitio quedó rápido, claro y fácil de actualizar. Ahora publicamos nosotros mismos, sin pedirle permiso a nadie.</p></blockquote>
+            <figcaption><span class="voice-role">Cargo por confirmar</span><span class="voice-org">Organización por confirmar</span></figcaption>
+          </figure>
+          <figure class="voice" data-voice data-placeholder="testimonio" aria-hidden="true">
+            <blockquote><p>Nos entregaron a tiempo y con todo documentado. No perdimos un fin de semana explicando cómo funciona.</p></blockquote>
+            <figcaption><span class="voice-role">Cargo por confirmar</span><span class="voice-org">Organización por confirmar</span></figcaption>
+          </figure>
+        </div>
+        <div class="voice-progress" aria-hidden="true"><i data-voice-progress></i></div>
+        <div class="voice-controls">
+          <div class="voice-steps" aria-hidden="true"><i class="is-active"></i><i></i><i></i></div>
+          <p class="voice-count"><span data-voice-current>01</span> / 03</p>
+          <div class="voice-buttons">
+            <button type="button" class="voice-toggle" data-voice-toggle aria-label="Pausar cambio automático" aria-pressed="false">
+              <svg class="voice-icon-pause" viewBox="0 0 16 16" aria-hidden="true"><path d="M5.5 3.5v9M10.5 3.5v9"/></svg>
+              <svg class="voice-icon-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5 12 8l-6 4.5z"/></svg>
+            </button>
+            <button type="button" data-voice-prev aria-label="Testimonio anterior"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10.5 3 5.5 8l5 5"/></svg></button>
+            <button type="button" data-voice-next aria-label="Testimonio siguiente"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m5.5 3 5 5-5 5"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         Quiénes somos
+         ================================================================ -->
+    <section class="team" id="nosotros" aria-labelledby="team-title">
+      <div class="section-bar">
+        <h2 id="team-title" tabindex="-1">Quiénes somos</h2>
+        <p>Tres personas con formaciones distintas —abogacía, contaduría y tecnología— que trabajan juntas desde el primer día.</p>
+      </div>
+
+      <div class="team-process" data-team-process>
+        <div class="team-track" aria-hidden="true">
+          <span class="team-fill" data-team-fill></span>
+          <span class="team-marker" data-team-marker><svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="6"></circle><path d="M12 0v7M12 17v7M0 12h7M17 12h7"></path></svg></span>
+        </div>
+        <ol class="team-grid">
+          <li class="member reveal is-active" data-team-step aria-current="step">
+            <div class="member-head">
+              <div class="member-media"><img class="member-photo" src="assets/team/pablouribe.jpg" alt="Retrato de Pablo Uribe" width="800" height="1000" loading="lazy"></div>
+              <div class="member-id">
+                <p class="member-step">01 · Dirección</p>
+                <h3>Pablo Uribe</h3>
+                <p class="member-role">CEO · Director Ejecutivo</p>
+              </div>
+            </div>
+            <p class="member-bio">Abogado y PhD en Filosofía. Acompaña la dirección general y ayuda a que cada proyecto tenga un propósito claro.</p>
+            <a class="member-mail" href="mailto:pablo.uribe@dampak.com.co">pablo.uribe@dampak.com.co</a>
+          </li>
+          <li class="member reveal" data-team-step>
+            <div class="member-head">
+              <!-- Melany: marcador temporal. Reemplazar por retrato autorizado y actualizar el alt. -->
+              <div class="member-media"><img class="member-photo" src="assets/team/melanychiari.jpg" alt="Marcador de foto pendiente de Melany Chiari" width="800" height="1000" loading="lazy"></div>
+              <div class="member-id">
+                <p class="member-step">02 · Negocio</p>
+                <h3>Melany Chiari</h3>
+                <p class="member-role">CCO · Directora comercial</p>
+              </div>
+            </div>
+            <p class="member-bio">Contadora pública. Lleva la conversación comercial y ayuda a entender qué necesita cada organización.</p>
+            <a class="member-mail" href="mailto:melany.chiari@dampak.com.co">melany.chiari@dampak.com.co</a>
+          </li>
+          <li class="member reveal" data-team-step>
+            <div class="member-head">
+              <div class="member-media"><img class="member-photo" src="assets/team/davidvalbuena.jpg" alt="Retrato de David Valbuena" width="800" height="1000" loading="lazy"></div>
+              <div class="member-id">
+                <p class="member-step">03 · Tecnología</p>
+                <h3>David Valbuena</h3>
+                <p class="member-role">CTO · Director de tecnología</p>
+              </div>
+            </div>
+            <p class="member-bio">Ingeniero de sistemas y especialista en alta gerencia. Lidera las decisiones técnicas para que cada solución sea clara y mantenible.</p>
+            <a class="member-mail" href="mailto:david.valbuena@dampak.com.co">david.valbuena@dampak.com.co</a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         Contacto
+         ================================================================ -->
+    <section class="contact" id="contacto" aria-labelledby="contact-title">
+      <div class="contact-copy">
+        <h2 id="contact-title" tabindex="-1">Cuéntanos qué necesitas</h2>
+        <p>Escríbenos con lo que tengas: un enlace, una idea, un problema. Con eso ya arrancamos.</p>
+
+        <ol class="contact-steps">
+          <li><span>01</span> Leemos tu contexto</li>
+          <li><span>02</span> Te decimos si podemos resolverlo</li>
+          <li><span>03</span> Plan y alcance por escrito</li>
+        </ol>
+
+        <div class="contact-alt">
+          <p>¿Te queda más fácil por WhatsApp? Abre la app con un mensaje listo para escribirnos.</p>
+          <a class="btn btn-outline" href="https://wa.me/?text=Hola%20Dampak%2C%20quiero%20contarles%20sobre%20mi%20proyecto" target="_blank" rel="noopener noreferrer" data-placeholder="whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.174.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 0 1 6.988 2.896 9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            Escríbenos por WhatsApp
+          </a>
+          <a class="contact-mail" href="mailto:contacto@dampak.com.co">contacto@dampak.com.co</a>
+        </div>
+
+        <p class="contact-demo">Maqueta local: el formulario no envía datos. Falta conectar el número oficial de WhatsApp para que el mensaje llegue directamente a Dampak.</p>
+      </div>
+
+      <form class="contact-form" novalidate data-form>
+        <div class="form-row">
+          <div class="field">
+            <label for="p6-nombre">Nombre <span aria-hidden="true">*</span></label>
+            <input id="p6-nombre" name="nombre" type="text" autocomplete="name" required aria-describedby="p6-nombre-error">
+            <p class="field-error" id="p6-nombre-error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="p6-email">Correo <span aria-hidden="true">*</span></label>
+            <input id="p6-email" name="email" type="email" autocomplete="email" required aria-describedby="p6-email-error">
+            <p class="field-error" id="p6-email-error" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="p6-empresa">Empresa u organización</label>
+            <input id="p6-empresa" name="empresa" type="text" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="p6-servicio">Tipo de proyecto</label>
+            <select id="p6-servicio" name="servicio">
+              <option value="">Selecciona una opción</option>
+              <option>Landing page</option>
+              <option>Sitio web corporativo</option>
+              <option>Portal de contenido</option>
+              <option>E-commerce</option>
+              <option>Desarrollo a medida</option>
+              <option>Todavía no lo tengo claro</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="p6-mensaje">¿Qué necesitas resolver? <span aria-hidden="true">*</span></label>
+          <textarea id="p6-mensaje" name="mensaje" rows="4" required aria-describedby="p6-mensaje-error"></textarea>
+          <p class="field-error" id="p6-mensaje-error" aria-live="polite"></p>
+        </div>
+
+        <div class="field field-check">
+          <input id="p6-datos" name="datos" type="checkbox" required aria-describedby="p6-datos-error">
+          <label for="p6-datos">Autorizo a Dampak a tratar mis datos personales para responder esta solicitud. Consulta la <a href="privacidad.html">política de datos</a>.</label>
+          <p class="field-error" id="p6-datos-error" aria-live="polite"></p>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn btn-accent" type="submit">Enviar mensaje <span aria-hidden="true">↗</span></button>
+          <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- ================================================================
+       Pie
+       ================================================================ -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="#inicio" aria-label="Dampak, volver al inicio">
+          <img class="brand-logo-on-dark" src="assets/brand/logo-light.png" width="1881" height="420" alt="Dampak">
+          <img class="brand-logo-on-light" src="assets/brand/logo-dark.png" width="1881" height="420" alt="">
+        </a>
+        <p>Casa de desarrollo digital. Diseñamos y construimos sitios que sostienen el día a día del negocio.</p>
+        <a class="footer-mail" href="mailto:contacto@dampak.com.co">contacto@dampak.com.co</a>
+      </div>
+
+      <nav class="footer-nav" aria-label="Secciones del sitio">
+        <h2>Sitio</h2>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#casos">Casos</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <nav class="footer-nav" aria-label="Información legal">
+        <h2>Legal</h2>
+        <a href="terminos.html">Términos y condiciones</a>
+        <a href="privacidad.html">Política de datos</a>
+        <a href="cookies.html">Política de cookies</a>
+      </nav>
+
+      <div class="footer-social">
+        <h2>Redes</h2>
+        <ul>
+          <li>
+            <span class="social-badge" role="img" title="LinkedIn — próximamente" aria-label="LinkedIn, próximamente">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065Zm1.782 13.019H3.555V9h3.564v11.452ZM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0Z"/></svg>
+            </span>
+          </li>
+          <li>
+            <span class="social-badge" role="img" title="Instagram — próximamente" aria-label="Instagram, próximamente">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069ZM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0Zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881Z"/></svg>
+            </span>
+          </li>
+          <li>
+            <span class="social-badge" role="img" title="Facebook — próximamente" aria-label="Facebook, próximamente">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073Z"/></svg>
+            </span>
+          </li>
+          <li>
+            <span class="social-badge" role="img" title="X — próximamente" aria-label="X, próximamente">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Dampak · Todos los derechos reservados</p>
+      <p>Colombia</p>
+      <p><a href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

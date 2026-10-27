@@ -1,0 +1,46 @@
+{
+  "name": "Dampak — Propuesta 06 Verde",
+  "version": "1.0.0",
+  "variantOf": "dampak-mockup-naranja/",
+  "brand": {
+    "wordmark": "Dampak supplied PDF logo geometry",
+    "accent": "official bright green from the second logo in logo-dampak.pdf",
+    "green": "#8CE60D",
+    "theme": "dark default with light alternate"
+  },
+  "colors": {
+    "dark": {
+      "background": "#100e11",
+      "surface": "#171417",
+      "ink": "#f2ede4",
+      "muted": "#a49c93",
+      "accent": "#8CE60D",
+      "accentInk": "#14100f",
+      "accentText": "#8CE60D"
+    },
+    "light": {
+      "background": "#f6f3ed",
+      "surface": "#ffffff",
+      "ink": "#17140f",
+      "muted": "#5c564c",
+      "accent": "#8CE60D",
+      "accentInk": "#16110f",
+      "accentText": "#3E7000"
+    }
+  },
+  "typography": {
+    "display": "Bricolage Grotesque",
+    "body": "Schibsted Grotesk",
+    "detail": "Spline Sans Mono"
+  },
+  "layout": {
+    "maxWidth": "1440px",
+    "sharedContainer": true,
+    "responsiveBreakpoints": [1120, 960, 620, 400]
+  },
+  "signature": "single-line green title, macOS-like browser frames, manual quote slider, scroll-linked team steps",
+  "accessibility": {
+    "reducedMotion": true,
+    "axeWcag21AA": "verified in dark and light themes"
+  }
+}
